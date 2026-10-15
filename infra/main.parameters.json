@@ -1,0 +1,10 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "appName": { "value": "fencingclub" },
+    "sqlAdminLogin": { "value": "<you@yourdomain.com>" },
+    "sqlAdminObjectId": { "value": "<your-entra-object-id>" },
+    "jwtSigningKey": { "value": "<generate: openssl rand -base64 48>" }
+  }
+}
