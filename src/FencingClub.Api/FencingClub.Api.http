@@ -1,0 +1,46 @@
+@host = http://localhost:5078
+@token = paste-accessToken-from-login
+
+### Register
+POST {{host}}/api/auth/register
+Content-Type: application/json
+
+{ "email": "fencer@example.com", "password": "Passw0rd!", "firstName": "Ada", "lastName": "Lovelace" }
+
+### Login
+POST {{host}}/api/auth/login
+Content-Type: application/json
+
+{ "email": "fencer@example.com", "password": "Passw0rd!" }
+
+### Who am I
+GET {{host}}/api/auth/me
+Authorization: Bearer {{token}}
+
+### Clubs
+GET {{host}}/api/clubs?page=1&pageSize=25
+Authorization: Bearer {{token}}
+
+### Create a club (Admin)
+POST {{host}}/api/clubs
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{ "name": "Riverside Fencing Academy", "city": "Portland", "email": "info@example.com" }
+
+### Schedule a class (Admin or Coach) - also pushes to devices following the club
+POST {{host}}/api/classes
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{ "clubId": 1, "title": "Beginner Foil", "weapon": "Foil", "startsAt": "2026-11-01T18:00:00Z", "durationMinutes": 90, "capacity": 12, "coachName": "Coach Kim" }
+
+### Register this device for push
+PUT {{host}}/api/notifications/installations
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{ "installationId": "device-123", "platform": "Fcm", "pushChannel": "<fcm-registration-token>", "clubIds": [1] }
+
+### Health
+GET {{host}}/health

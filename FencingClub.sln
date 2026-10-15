@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{C786FF0E-07D0-4185-BB17-9FEDEF28CDC7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FencingClub.Api", "src\FencingClub.Api\FencingClub.Api.csproj", "{98B38807-E300-47BF-9762-6DEBD58478F3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{4B8AEDF9-20E0-44C0-939D-ACA030863B7F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FencingClub.Api.Tests", "tests\FencingClub.Api.Tests\FencingClub.Api.Tests.csproj", "{522433B7-A5D4-42D7-899B-A1D736DA9416}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{98B38807-E300-47BF-9762-6DEBD58478F3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{98B38807-E300-47BF-9762-6DEBD58478F3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{98B38807-E300-47BF-9762-6DEBD58478F3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{98B38807-E300-47BF-9762-6DEBD58478F3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{522433B7-A5D4-42D7-899B-A1D736DA9416}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{522433B7-A5D4-42D7-899B-A1D736DA9416}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{522433B7-A5D4-42D7-899B-A1D736DA9416}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{522433B7-A5D4-42D7-899B-A1D736DA9416}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{98B38807-E300-47BF-9762-6DEBD58478F3} = {C786FF0E-07D0-4185-BB17-9FEDEF28CDC7}
+		{522433B7-A5D4-42D7-899B-A1D736DA9416} = {4B8AEDF9-20E0-44C0-939D-ACA030863B7F}
+	EndGlobalSection
+EndGlobal
